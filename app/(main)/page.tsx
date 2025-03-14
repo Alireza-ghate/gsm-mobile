@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "از بررسی تا خرید موبایل",
+};
+
 function Homepage() {
   return (
     <div>
