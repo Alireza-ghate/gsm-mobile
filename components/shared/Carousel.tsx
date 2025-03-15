@@ -13,6 +13,7 @@ import slide1 from "@/public/images/carousel/slide_1.webp";
 import slide2 from "@/public/images/carousel/slide_2.webp";
 import slide3 from "@/public/images/carousel/slide_3.webp";
 import slide4 from "@/public/images/carousel/slide_4.webp";
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
@@ -24,9 +25,9 @@ const images = [
 
 function Carousel() {
   return (
-    <div className="relative w-full max-w-[1500px] mx-auto min-w-[300px] md:rounded-xl">
+    <div className="relative bg-amber-400 max-w-[1500px] min-w-[375px] mx-auto md:rounded-xl">
       <Swiper
-        className="md:rounded-xl"
+        className="flex md:rounded-xl"
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
@@ -37,23 +38,21 @@ function Carousel() {
         pagination={{
           clickable: true,
         }}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        // autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
       >
         {images.map((slide, index) => (
-          <SwiperSlide key={index} className="relative w-full">
-            <Link
-              target="_blank"
-              href={slide.href}
-              className="block relative w-full h-80 md:h-[420px]"
-            >
-              <Image
-                src={slide.src}
-                alt={`اسلاید ${index + 1}`}
-                fill
-                priority={true}
-                className="object-cover md:rounded-xl"
-              />
+          <SwiperSlide key={index} className="shrink-0">
+            <Link target="_blank" href={slide.href} className="">
+              <figure className="relative w-full h-[220px] sm:h-[280px] md:h-[360px] lg:h-[420px]">
+                <Image
+                  src={slide.src}
+                  alt={`اسلاید ${index + 1}`}
+                  priority={true}
+                  className=" lg:object-cover md:rounded-xl"
+                  fill
+                />
+              </figure>
             </Link>
           </SwiperSlide>
         ))}

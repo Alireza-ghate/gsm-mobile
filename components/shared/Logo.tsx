@@ -13,6 +13,7 @@ function Logo() {
           alt="لوگوی دیجی موبایل"
           width={190}
           height={35}
+          priority
         />
       </Link>
     </div>
