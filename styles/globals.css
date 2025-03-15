@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@layer components {
+  .wrapper {
+    max-width: 1280px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body {
+  color: #020617;
+}

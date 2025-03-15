@@ -1,3 +1,5 @@
+import Header from "@/components/shared/Header";
+
 export default function MainLayout({
   children,
 }: Readonly<{
@@ -5,6 +7,7 @@ export default function MainLayout({
 }>) {
   return (
     <>
+      <Header />
       <main>{children}</main>
     </>
   );
