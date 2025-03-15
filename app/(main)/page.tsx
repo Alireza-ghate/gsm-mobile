@@ -1,11 +1,13 @@
+import Carousel from "@/components/shared/Carousel";
+
 export const metadata = {
   title: "از بررسی تا خرید موبایل",
 };
 
 function Homepage() {
   return (
-    <div>
-      <h1>فروشگاه موبایل</h1>
+    <div className="bg-gray-500 p-4">
+      <Carousel />
     </div>
   );
 }

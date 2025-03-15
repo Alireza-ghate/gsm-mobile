@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Navigation() {
   return (
-    <nav className="bg-red-400 absolute lg:pt-0 w-full h-screen right-0 lg:relative px-12 py-4 lg:h-auto max-w-[1280px] min-w-[350px] mx-auto">
+    <nav className="hidden absolute z-[100] bg-white lg:pt-0 w-full h-screen right-0 lg:relative px-12 py-4 lg:h-auto max-w-[1280px] min-w-[350px] mx-auto">
       <ul className="flex flex-col gap-5 lg:flex-row z-50 lg:gap-4">
         <li>
           <Link className="flex items-center justify-between" href={"#"}>

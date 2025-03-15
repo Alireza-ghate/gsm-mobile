@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 function Header() {
   return (
     <header className="bg-white border-b border-b-gray-200 z-50">
-      <div className="max-w-[1280px] min-w-[350px] mx-auto relative bg-amber-300 px-12 py-6 lg:flex lg:flex-col lg:gap-4">
+      <div className="max-w-[1280px] min-w-[350px] mx-auto relative px-12 py-6 lg:flex lg:flex-col lg:gap-4">
         <div className="flex flex-wrap lg:flex-nowrap gap-1.5 sm:gap-2 md:gap-3 lg:gap-4 xl:gap-5.5 items-center">
           <div className="flex items-center gap-2">
             <HamberMenu />
