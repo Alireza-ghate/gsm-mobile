@@ -26,6 +26,7 @@ function Carousel() {
   return (
     <div className="relative w-full max-w-[1500px] mx-auto min-w-[300px] md:rounded-xl">
       <Swiper
+        className="md:rounded-xl"
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
