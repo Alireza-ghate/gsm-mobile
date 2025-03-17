@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 function SearchBar() {
   return (
-    <div className="w-full">
+    <div className="w-full order-3 lg:order-0">
       <form className="relative">
         <Search
           strokeWidth={1.5}

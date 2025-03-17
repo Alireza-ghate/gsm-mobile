@@ -3,7 +3,7 @@
 @layer components {
   .wrapper {
     max-width: 1280px;
-    min-width: 900px;
+    min-width: 300px;
     margin-left: auto;
     margin-right: auto;
   }
