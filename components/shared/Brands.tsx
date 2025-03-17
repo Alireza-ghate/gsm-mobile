@@ -69,7 +69,7 @@ const brands = [
 
 function Brands() {
   return (
-    <div className="bg-white rounded-xl py-6 relative overflow-hidden">
+    <div className="bg-white rounded-xl py-6 mb-4 relative overflow-hidden">
       {/* left gradient */}
       <div className="absolute left-0 top-0 h-full w-10 md:w-18 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
       <div className="wrapper">
@@ -113,4 +113,3 @@ function Brands() {
 }
 
 export default Brands;
-
