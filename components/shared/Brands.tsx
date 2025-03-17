@@ -114,26 +114,3 @@ function Brands() {
 
 export default Brands;
 
-{
-  /* slider container
-      <div className="wrapper px-12 h-auto  flex items-center justify-center overflow-x-auto">
-        {brands.map((brand, index) => (
-          <div key={index}>
-            <Link
-              className="flex flex-col gap-4 items-center"
-              href={brand.href}
-            >
-              <div className="relative w-14 h-14">
-                <Image
-                  className="object-contain"
-                  src={brand.src}
-                  alt={`لوگوی ${brand.label}`}
-                  fill
-                />
-              </div>
-              <p className="text-sm">{brand.label}</p>
-            </Link>
-          </div>
-        ))}
-      </div> */
-}
