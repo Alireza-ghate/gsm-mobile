@@ -6,17 +6,15 @@ import Link from "next/link";
 
 function Logo() {
   return (
-    <div className="w-[140px] sm:w-[190px]">
-      <Link href={"/"}>
-        <Image
-          src="/images/logo/GSM-Logo.png"
-          alt="لوگوی دیجی موبایل"
-          width={190}
-          height={35}
-          priority
-        />
-      </Link>
-    </div>
+    <Link href={"/"}>
+      <Image
+        src="/images/logo/GSM-Logo.png"
+        alt="لوگوی دیجی موبایل"
+        width={190}
+        height={35}
+        priority
+      />
+    </Link>
   );
 }
 

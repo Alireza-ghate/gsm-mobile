@@ -1,3 +1,4 @@
+import Brands from "@/components/shared/Brands";
 import Carousel from "@/components/shared/Carousel";
 
 export const metadata = {
@@ -6,8 +7,9 @@ export const metadata = {
 
 function Homepage() {
   return (
-    <div className="bg-gray-100 py-4 px-0 md:p-4">
+    <div className="bg-gray-100 p-4">
       <Carousel />
+      <Brands />
     </div>
   );
 }
