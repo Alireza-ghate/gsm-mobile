@@ -1,4 +1,3 @@
-import { Info } from "lucide-react";
 import Image from "next/image";
 
 function Services() {
@@ -22,10 +21,8 @@ function Services() {
               width={48}
               height={48}
             />
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-1 cursor-pointer">
-              <p>قیمت منصفانه</p>
-              <Info size={16} />
-            </div>
+
+            <p>قیمت منصفانه</p>
           </div>
           <div className="flex flex-col gap-2.5 items-center flex-1">
             <Image

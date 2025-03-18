@@ -1,5 +1,6 @@
 import Brands from "@/components/shared/Brands";
 import Carousel from "@/components/shared/Carousel";
+import FeatureSection from "@/components/shared/FeatureSection";
 import Services from "@/components/shared/Services";
 
 export const metadata = {
@@ -12,6 +13,7 @@ function Homepage() {
       <Carousel />
       <Brands />
       <Services />
+      <FeatureSection title="جدیدترین گوشی ها" />
     </div>
   );
 }
