@@ -1,9 +1,14 @@
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
-function HamberMenu() {
+type HamberMenuProp = {
+  isOpen: boolean;
+  onClick: () => void;
+};
+
+function HamberMenu({ isOpen, onClick }: HamberMenuProp) {
   return (
-    <div className="text-2xl lg:hidden">
-      <Menu />
+    <div onClick={onClick} className="text-2xl lg:hidden p-1 cursor-pointer">
+      {isOpen ? <X /> : <Menu />}
     </div>
   );
 }

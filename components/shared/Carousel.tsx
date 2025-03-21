@@ -25,8 +25,8 @@ const images = [
 
 function Carousel() {
   return (
-    <div className="bg-white rounded-xl">
-      <div className="relative max-w-[1500px] mx-auto md:rounded-xl mb-4">
+    <div className="bg-gray-100 rounded-xl p-0 sm:p-4">
+      <div className="relative max-w-[1500px] mx-auto md:rounded-xl">
         <Swiper
           className="flex md:rounded-xl"
           modules={[Navigation, Pagination, Autoplay]}

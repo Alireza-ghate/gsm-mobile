@@ -1,26 +1,15 @@
-import HamberMenu from "./HamberMenu";
-import LoginButton from "./LoginButton";
-import Logo from "./Logo";
-import Navigation from "./Navigation";
-import SearchBar from "./SearchBar";
+import HeaderClient from "./HeaderClient";
 
 function Header() {
-  return (
-    <header className="bg-white border-b border-b-gray-200 z-50">
-      <div className="max-w-[1280px] min-w-[350px] mx-auto relative px-12 py-6 lg:flex lg:flex-col lg:gap-4">
-        <div className="flex flex-wrap lg:flex-nowrap gap-2 sm:gap-2.5 md:gap-3 lg:gap-4 xl:gap-5.5 items-center">
-          <div className="flex items-center gap-2">
-            <HamberMenu />
-            <div className="w-[140px] sm:w-[190px] ">
-              <Logo />
-            </div>
-          </div>
-          <SearchBar />
-          <LoginButton />
-        </div>
-      </div>
+  // const session = await auth();
+  // if pass whole "session" as prop into a client component this makes that client component dynamic rendering
+  // if instead of passing session we use it directly in server component this dose NOT make the whole page dynamic
+  // if we truly needed this session inside a client component instead of passing the whole session ONLY PASS THE NEEDED INFORMATIONS example:session?.user?.name
+  // for avoid dynamic rendering pass "session" throught prop into client component
 
-      <Navigation />
+  return (
+    <header className="bg-white border-b border-b-gray-200 z-50 relative">
+      <HeaderClient />
     </header>
   );
 }

@@ -15,6 +15,7 @@ export type ProductType = {
   price: string;
 };
 
+// delete me
 const items: ProductType[] = [
   {
     title: "گوشی شیائومی پوکو M7 ظرفیت 128GB رم 6GB",
@@ -60,16 +61,24 @@ const items: ProductType[] = [
   },
 ];
 
-function FeatureSection({ title }: { title: string }) {
+function ProductSlider({ title }: { title: string }) {
   return (
-    <div className="bg-white rounded-xl py-6 px-4 sm:px-6">
+    <div className="bg-white rounded-xl p-6 my-4 md:px-8 md:py-12">
       <div className="wrapper">
         <div className="flex flex-col gap-2">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-semibold">{title}</h2>
-            <div className="text-blue-400 flex items-center">
-              <Link href={"/"}>مشاهده همه</Link>
-              <ChevronLeft size={20} />
+            <h2 className="text-xl lg:text-2xl font-semibold">{title}</h2>
+            <div className="text-blue-400 flex items-center cursor-pointer group ">
+              <Link
+                className="group-hover:translate-x-[2px] transition-all duration-300"
+                href={"/"}
+              >
+                مشاهده همه
+              </Link>
+              <ChevronLeft
+                className="group-hover:-translate-x-[2px] transition-all duration-300"
+                size={20}
+              />
             </div>
           </div>
           <div>
@@ -99,4 +108,4 @@ function FeatureSection({ title }: { title: string }) {
   );
 }
 
-export default FeatureSection;
+export default ProductSlider;

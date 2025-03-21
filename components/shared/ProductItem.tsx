@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ProductType } from "./FeatureSection";
+import { ProductType } from "./ProductSlider";
 
 type ProductItemProp = {
   product: ProductType;
@@ -8,7 +8,7 @@ type ProductItemProp = {
 
 function ProductItem({ product }: ProductItemProp) {
   return (
-    <Link href={`/${product.slug}`}>
+    <Link href={`/product/${product.slug}`}>
       <div className="bg-white p-3 flex flex-col gap-2 border border-gray-300 hover:border-gray-400 trainsition-all duration-150 rounded-xl">
         {/* image */}
         <div className="relative w-[145px] h-[145px] self-center">
