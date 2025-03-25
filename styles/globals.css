@@ -19,6 +19,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   transition: all 0.3s;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* all bullets */
 
 body {
