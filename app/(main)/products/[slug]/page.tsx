@@ -49,6 +49,7 @@ async function ProductDetailsPage({
   const { slug } = await params;
 
   const productSlug = slug; //get the single product using this
+  console.log(productSlug);
 
   // fake product
   const product = {
