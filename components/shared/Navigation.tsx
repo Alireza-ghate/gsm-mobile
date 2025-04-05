@@ -1,7 +1,23 @@
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
 
 function Navigation({ isOpen }: { isOpen: boolean }) {
+  useEffect(
+    function () {
+      if (isOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+
+      return () => {
+        document.body.style.overflow = "";
+      };
+    },
+    [isOpen]
+  );
+
   return (
     <nav
       className={`${
