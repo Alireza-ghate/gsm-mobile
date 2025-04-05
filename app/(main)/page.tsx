@@ -7,7 +7,10 @@ export const metadata = {
   title: "از بررسی تا خرید موبایل",
 };
 
-function Homepage() {
+// const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
+
+async function Homepage() {
+  // await delay(3000);
   return (
     <>
       <Carousel />

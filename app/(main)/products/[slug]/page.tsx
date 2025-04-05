@@ -31,7 +31,7 @@ import { ChevronLeft } from "lucide-react";
 } */
 
 export type ProductInfoType = {
-  title: string;
+  name: string;
   images: string[];
   capacity: string[];
   colors: string[];
@@ -53,7 +53,7 @@ async function ProductDetailsPage({
 
   // fake product
   const product = {
-    title: "اپل آیفون 13 Ch - نات‌اکتیو ظرفیت 128GB رم 4GB",
+    name: "اپل آیفون 13 Ch - نات‌اکتیو ظرفیت 128GB رم 4GB",
     images: [
       "/images/products/apple_iphone_13-main.webp",
       "/images/products/apple_iphone_13-66317.webp",
@@ -89,7 +89,7 @@ async function ProductDetailsPage({
           </BreadcrumbSeparator>
           <BreadcrumbItem>
             <BreadcrumbPage className="font-semibold">
-              {product.title}
+              {product.name}
             </BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>

@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import SearchBar from "./SearchBar";
 import LoginButton from "./LoginButton";
 import Navigation from "./Navigation";
+import CartModal from "./CartModal";
 
 function HeaderClient() {
   const [isOpen, setisOpen] = useState<boolean>(false);
@@ -26,6 +27,7 @@ function HeaderClient() {
           </div>
           <SearchBar />
           <LoginButton />
+          <CartModal />
         </div>
       </div>
       <Navigation isOpen={isOpen} />

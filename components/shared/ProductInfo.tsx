@@ -11,7 +11,7 @@ function ProductInfo({ product }: { product: ProductInfoType }) {
       <ProductGallery images={product.images} />
       <div className="self-start">
         <h1 className="text-xl md:text-2xl font-semibold mb-4 mt-6">
-          {product.title}
+          {product.name}
         </h1>
         <span className="text-gray-400 text-xs bg-gray-100 px-6 py-1 rounded-full">
           {product.brand}
