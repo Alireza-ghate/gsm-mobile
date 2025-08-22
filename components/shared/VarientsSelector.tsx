@@ -21,7 +21,7 @@ function VarientsSelector({ product }: { product: ProductInfoType }) {
     newParams.set("color", color);
     router.push(`?${newParams.toString()}`, { scroll: false });
   }
-
+  console.log(selectedCapacity);
   return (
     <>
       {/* capacity */}
@@ -56,7 +56,7 @@ function VarientsSelector({ product }: { product: ProductInfoType }) {
                 style={{ direction: "ltr" }}
                 className="text-xs text-gray-500"
               >
-                {capacity}
+                {capacity.replaceAll("-", " ")}
               </span>
             </div>
           ))}

@@ -1,4 +1,4 @@
-export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "دیجی موبایل";
+export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "جی اس ام";
 export const APP_DESCRIPTION =
   process.env.NEXT_PUBLIC_APP_DESCRIPTION ||
   "فروشگاه تخصصی خرید و بررسی موبایل";
